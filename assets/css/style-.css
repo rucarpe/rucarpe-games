@@ -1,0 +1,56 @@
+/* Estilos de rucarpe-games.io
+#   1- Fuentes
+#   2- Generales
+#       - Eliminar margenes
+#       - Eliminar floats: .clearfix
+#       - Background
+#   3- Cabecera
+#
+*/
+
+
+
+/* Fuentes */
+@font-face{
+    font-family: "Fjalla One";
+    src: url(../fonts/FjallaOne.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Generales */
+    /* ### Eliminar los márgenes */
+* {
+    margin:0px;
+    padding: 0px;
+    /* Fuentes alternativas */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* Eliminar decoración del texto con los enlaces. */
+    text-decoration: none;
+}
+
+    /* ### Eliminar floats */
+.clearfix {
+    clear: both;
+    float: none;
+}
+    /* ### Background del Body */
+body {
+    background: url(../img/cubes.png) #f4f4f4;
+}
+
+/* Cabecera */
+.main-header {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    margin: 0px auto;
+    border: 1px solid #000000;
+}
+
+    /* Logo página en texto */
+#logo, .page-title {
+    float: left;
+    width: 540px;
+    height: 140px;
+}
