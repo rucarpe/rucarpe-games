@@ -1,0 +1,152 @@
+/* Estilos de rucarpe-games.io
+    1- Fuentes
+    2- Generales
+        - Eliminar margenes
+        - Eliminar floats: .clearfix
+        - Background
+        - .forms // Formularios generales
+    3- Cabecera
+    .main-header
+        #logo
+        h1.page-title
+    #main-menu
+        #menu-item-1/7
+            - Efectos de elementos individuales del menú
+    4- Aside
+        aside#sidebar
+        form#login-form-aside
+        form#register-form-aside
+    5- Main content
+        section#main-content
+        article#article-1
+        article#article-2
+        article#article-3
+    6- Main footer    
+        footer#main-footer
+
+   
+*/
+
+
+
+/* Fuentes */
+@font-face{
+    font-family: "Fjalla One";
+    src: url(../fonts/FjallaOne.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Generales */
+    /* ### Eliminar los márgenes */
+* {
+    margin:0px;
+    padding: 0px;
+    /* Fuentes alternativas */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* Eliminar decoración del texto con los enlaces. */
+    text-decoration: none;
+    color: #000000;
+    position: -webkit-sticky;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+    /* ### Eliminar floats */
+.clearfix {
+    clear: both;
+    float: none;
+}
+    /* ### Background del Body */
+body {
+    background: url(../img/cubes.png) #f4f4f4;
+}
+
+/* Cabecera */
+.main-header {
+    width: 80%;
+    height: auto;
+    background: transparent;
+    margin: 0px auto;
+    border: 1px solid #000000;
+}
+
+    /* Logo página en texto */
+#logo, .page-title {
+    float: left;
+    width: 540px;
+    height: 140px;
+    text-shadow: 1px, 1px, 0px, #000000;
+}
+    /* Barra de navegación */
+.navbar {
+    clear:both;
+    width: auto;
+    background: linear-gradient(to bottom, #a4a4a4 0px, #c1c1c1 100%);
+    float: left;
+}
+    /* Elementos de menú con li */
+ul#main-menu li {
+    list-style: none;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 30px;
+    border: #686868 1px solid;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.5rem;
+    border-radius: 0px 0px 10px 10px;
+    background: linear-gradient(to bottom, #f3b64f 0px, #9f7607 100%);
+}
+
+    /* Efectos de elementos individuales del menú */
+ul#main-menu li:hover, ul#main-menu li:active {
+    line-height: 40px;
+}
+    /* Barra lateral o Aside */
+aside#sidebar {
+    float: right;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #000000;
+    position: sticky;
+    top: 10px;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+    /* Formulario de registro en el Aside */
+form#register-form-aside {
+    float: right;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #000000;
+}
+    /* Formulario de login en el Aside */
+form#login-form-aside {
+    float: right;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #000000;
+}
+
+    /* Elementos dentro del Form  */
+#login-form-aside label, #login-form-aside input, #register-form-aside label, #register-form-aside input {
+    width: auto;
+}
+
+    /* Contenido principal */
+section#main-content {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #000000;
+}
+
+    /* Footer de la página principal */
+footer#main-footer {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #000000;
+}
